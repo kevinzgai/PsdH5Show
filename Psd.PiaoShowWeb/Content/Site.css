@@ -1,0 +1,364 @@
+﻿body {
+    padding-top: 7% !important;
+    padding-bottom: 20px;
+    /*cursor: url(../../upload/pointer-lb128.png),default;*/
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    width: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too Int32 to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;text-align: center;
+    content: "this is test project "
+
+}
+/*编辑器*/
+.containment-wrapper {
+    width: 95%;
+    height: 150px;
+    /*border: 2px solid #ccc;*/
+}
+
+.imgview {
+    cursor: move;
+    position: absolute !important;
+    width: 150px;
+    border: 1px solid rgba(0,0,0,0);
+    overflow: inherit;
+}
+
+    .imgview img {
+        width: 100%;
+        height: 100%;
+    }
+
+.btn-bgset {
+    border: 0px springgreen solid;
+    position: relative;
+    top: -500px;
+    left: 444px;
+    border-left: 1px solid gray;
+    z-index: 999;
+    background-color: orange;
+    font-family: "微软雅黑";
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    color: white;
+}
+
+.btn-MP3set {
+    border: 0px springgreen solid;
+    position: relative;
+    top: -300px;
+    left: 392px;
+    z-index: 999;
+    background-color: purple;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    font-family: "微软雅黑";
+    color: white;
+}
+
+/*左侧导航*/
+#menuitem {
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    float: left;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    height: 100%;
+    box-shadow:0 0 30px gray;
+}
+    #menuitem .btn-addpage {
+        position: relative !important;
+        top: 0px;
+        cursor: pointer;left: 40px;
+        color: orangered;
+        font-size: 20px;
+    }
+    #menuitem .pagemanange {
+        max-height: 320px;
+        overflow-y: scroll;
+    }
+
+  
+
+    #menuitem span {
+        display: block;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+    #menuitem .pagemanange ul .select {
+        background-color: orangered;
+    }
+    
+    
+    
+    #menuitem .pagemanange ul li .btn-m {
+        float: right;
+        display: block;
+        color: white;
+        position: relative;
+        top: 2px;
+        margin: 1px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        text-align: center;
+        background-position: center center;
+        background-size: 100%;
+    }
+
+        #menuitem .pagemanange ul li .btn-m:hover {
+            animation: cgborcolor 1s;
+            -moz-animation: cgborcolor 1s; /* Firefox */
+            -webkit-animation: cgborcolor 1s; /* Safari 和 Chrome */
+            -o-animation: cgborcolor 1s; /* Opera */
+            color: orange;
+        }
+
+
+
+    #menuitem .pagemanange ul li .btn-del {
+        background-image: url('image/del.png');
+    }
+
+    #menuitem .pagemanange ul li .btn-up {
+        background-image: url('image/up.png');
+    }
+
+    #menuitem .pagemanange ul li .btn-down {
+        background-image: url('image/down.png');
+    }
+
+#phoneview {
+    width: 50%;
+    float: left;
+    height: 668px;
+    background: url(../content/image/iphone.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -0;
+    margin-left: 25%;
+}
+
+    #phoneview .iphone {
+        width: 280px !important;
+        height:440px;
+        padding: 0px 0px 0px 0px;
+        margin: 0 auto;
+        margin-top: 83px;
+        background-image: url('../../upload/pagebg.gif');
+        background-size: 100%;
+    }
+
+        #phoneview .iphone .view {
+            position: relative;
+            width: 342px;
+            height: 586px;
+            background: url(../content/image/iphone.png) 22px 0 no-repeat;
+            padding: 75px 0 0 12px;
+            margin: 0 auto;
+        }
+
+#phoneedit {
+    width: 20%;
+    float: left;
+    height: 20px;
+    height: 768px;
+    clear: right;
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    height: 100%;
+    box-shadow: 0 0 30px gray;
+}
+
+.control-list {
+    min-height: 50px;
+}
+
+    .control-list li {
+        display: none;
+    }
+
+        .control-list li:first-child {
+            display: block;
+        }
+
+.img-select {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    background-image: url('image/sj.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.active {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    background-image: url('image/sj.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.ZuGroup {
+    border: 1px rgba(0,0,0,0.1) solid;
+}
+
+    .ZuGroup li {
+        width: 49%;
+        height: 80px;
+        border-width: 0px;
+        padding: 0px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+    }
+/*拖拽按钮*/
+#swiperanimateangle {
+    width: 2em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+    background-color: rgb(205,92,92);
+    color: white;
+    border-radius: 5px;
+    cursor: e-resize;
+}
+
+#sliderangle {
+    background-color: rgba(255,222,0,.8);
+    border-radius: 5px;
+}
+
+    #sliderangle label {
+        display: block;
+    }
+
+.control-link div div div {
+    display: none;
+}
+
+.list-group-item {
+    cursor: pointer
+}
+
+.pagemanange ul li:hover {
+    animation: cgfontcolor 1s;
+    -moz-animation: cgfontcolor 1s; /* Firefox */
+    -webkit-animation: cgfontcolor 1s; /* Safari 和 Chrome */
+    -o-animation: cgfontcolor 1s; /* Opera */
+    color: orange;
+}
+
+@keyframes cgborcolor {
+    10% {
+        border: 1px solid rgba(0,0,0,0.1)
+    }
+
+    50% {
+        border: 1px solid rgba(0,0,0,0.5)
+    }
+
+    to {
+        border: 1px solid rgba(0, 0, 0, 1);
+        background-color: orangered;
+    }
+}
+
+@keyframes cgfontcolor {
+    from {
+        color: #333;
+    }
+
+    50% {
+        color: #1e90ff;
+        font-size: 2em;
+    }
+
+    to {
+        color: orange;
+    }
+}
+
+@-moz-keyframes cgfontcolor /* Firefox */
+{
+    from {
+        color: #333;
+    }
+
+    to {
+        color: orange;
+    }
+}
+
+@-webkit-keyframes cgfontcolor /* Safari 和 Chrome */
+{
+    from {
+        color: #333;
+    }
+
+    to {
+        color: orange;
+    }
+}
+
+@-o-keyframes cgfontcolor /* Opera */
+{
+    from {
+        background: #333;
+    }
+
+    to {
+        color: orange;
+    }
+}
